@@ -1,0 +1,66 @@
+body {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Tüm öğeleri ortala */
+}
+
+img {
+  max-width: 50vw;
+  max-height: 25vw;
+  display: block;
+  margin: 20px 0; /* Üst ve alt boşluk ekle */
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  flex-flow: row wrap;
+  max-width: 40vw;
+  margin: auto;
+  align-items: baseline;
+}
+
+input[type="text"], input[type="number"] {
+  padding: 10px;
+  border: 1px solid #4CAF50; /* Yeşil border */
+  border-radius: 4px;
+  flex: 1; /* Giriş alanlarının genişliğini ayarlamak için */
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  margin: 10px auto;
+  background-color: #28a745; /* Buton rengi */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; /* Fare ile üzerine gelindiğinde göster */
+}
+
+button[type="submit"]:hover {
+  background-color: #218838; /* Hover rengi */
+}
+
+.notification {
+  background-color: #d4edda; /* Başarılı mesaj için açık yeşil arka plan */
+  color: #155724; /* Yazı rengi */
+  padding: 10px;
+  margin: 10px auto;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  max-width: 40vw; /* Mesajın maksimum genişliği */
+  text-align: center; /* Mesajın ortalanması */
+}
+
+#greeting {
+  margin: 10px auto;
+  padding: 10px 60px;
+  border: 1px solid #222;
+}
+
+#greeting:empty {
+  display: none;
+}
